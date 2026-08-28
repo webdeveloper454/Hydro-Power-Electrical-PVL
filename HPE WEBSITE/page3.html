@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Supply Info</title>
+    <link rel="stylesheet" href="hpe8.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Reliable Power Supply</p>
+        <h1>Simple information for customers about price, voltage, and how much power they use.</h1>
+        <p class="hero-text">This page shows the regular details customers usually want from a power supplier in a clean and easy format.</p>
+        <a href="#estimate" class="btn">View Estimate</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="overview">
+        <div class="overview-card"><h3>Price</h3><p class="big-number">$0.18 / kWh</p><span>Standard residential supply rate</span></div>
+        <div class="overview-card"><h3>Voltage</h3><p class="big-number">230V</p><span>Common household supply level</span></div>
+        <div class="overview-card"><h3>Usage</h3><p class="big-number">320 kWh</p><span>Average monthly usage</span></div>
+      </section>
+
+      <section class="details">
+        <div class="details-text">
+          <h2>How a power supplier helps customers</h2>
+          <p>Customers want to know the price of electricity, the voltage supplied to their home, and how much power they are using each month. This layout gives that information clearly.</p>
+          <ul><li>Clear price per unit</li><li>Standard voltage information</li><li>Easy monthly usage view</li><li>Simple bill estimate tool</li></ul>
+        </div>
+
+        <div id="estimate" class="estimate-box">
+          <h3>Estimate Your Bill</h3>
+          <label>Usage (kWh)<input type="number" id="usage" min="1" value="320" /></label>
+          <label>Voltage (V)<input type="number" id="voltage" min="100" max="400" value="230" /></label>
+          <label>Price per kWh ($)<input type="number" id="price" min="0.01" step="0.01" value="0.18" /></label>
+          <div class="estimate-result"><p>Estimated Amount</p><h4 id="estimatedBill">$57.60</h4><span id="voltageInfo">Voltage supplied: 230V</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="hpe9.js"></script>
+  </body>
+</html>

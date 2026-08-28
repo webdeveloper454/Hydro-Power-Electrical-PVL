@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sign in to Hydro Power Electrical Pvt. Ltd.">
+	<title>Sign In | Hydro Power Electrical Pvt. LTD</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="hpe785.css">
+</head>
+<body>
+	<main class="login-page">
+		<section class="brand-panel" aria-label="Hydro Power Electrical">
+			<a class="brand" href="HPE1.html">
+				<span class="brand-mark" aria-hidden="true">H</span>
+				<span>HYDRO POWER<br><strong>ELECTRICAL</strong></span>
+			</a>
+
+			<div class="brand-message">
+				<p class="kicker">Powering progress</p>
+				<h1>Reliable energy<br><em>starts here.</em></h1>
+				<p>Access your HPE workspace and keep every project moving with confidence.</p>
+			</div>
+
+			<div class="plant-illustration" aria-hidden="true">
+				<span class="sun"></span>
+				<span class="mountain mountain-back"></span>
+				<span class="mountain mountain-front"></span>
+				<span class="water"></span>
+				<span class="turbine turbine-one"></span>
+				<span class="turbine turbine-two"></span>
+			</div>
+			<p class="panel-footer">Safe systems. Smarter communities. A greener tomorrow.</p>
+		</section>
+
+		<section class="form-panel">
+			<div class="form-wrap">
+				<div class="mobile-brand brand">
+					<span class="brand-mark" aria-hidden="true">H</span>
+					<span>HYDRO POWER<br><strong>ELECTRICAL</strong></span>
+				</div>
+				<div class="form-heading">
+					<p class="kicker">Welcome back</p>
+					<h2>Sign in to your account</h2>
+					<p>Enter your details below to continue.</p>
+				</div>
+
+				<form id="login-form" novalidate>
+					<div class="field">
+						<label for="email">Email address</label>
+						<input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+						<span class="field-error" id="email-error" role="alert"></span>
+					</div>
+					<div class="field">
+						<div class="label-row">
+							<label for="password">Password</label>
+							<a href="#forgot">Forgot password?</a>
+						</div>
+						<div class="password-input">
+							<input id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+							<button class="password-toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button>
+						</div>
+						<span class="field-error" id="password-error" role="alert"></span>
+					</div>
+					<label class="remember-row">
+						<input type="checkbox" name="remember">
+						<span>Remember me</span>
+					</label>
+					<button class="submit-button" type="submit">Sign in <span aria-hidden="true">&#8594;</span></button>
+					<p class="form-status" id="form-status" role="status"></p>
+				</form>
+
+				<p class="signup-prompt">New to HPE? <a href="page3.html">Contact your administrator</a></p>
+				<a class="power-supply-button" href="page3.html">POWER SUPPLY LIST</a>
+			</div>
+		</section>
+	</main>
+	<script src="hpe783.js"></script>
+</body>
+</html>
